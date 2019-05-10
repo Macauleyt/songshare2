@@ -1,16 +1,15 @@
 const mongoose = require("mongoose");
-
-const ProfileSchema = new mongoose.Schema({
+const Schema = mongoose.Schema;
+const ProfileSchema = new Schema({
   user: {
-    tpye: mongoose.Schema.Types.ObjectId,
+    type: mongoose.Schema.Types.ObjectId,
     ref: "user"
   },
   location: {
     type: String
   },
   artists: {
-    type: [String],
-    required: true
+    type: [String]
   },
   bio: {
     type: String
