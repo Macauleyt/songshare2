@@ -1,0 +1,12 @@
+export const UserLoad = "UserLoad";
+export const NotAuth = "NotAuth";
+export const Set_Alert = "Set_Alert";
+export const Remove_Alert = "Remove_Alert";
+export const Registered = "Registered";
+export const NotRegistered = "NotRegistered";
+export const LoggedIn = "LoggedIn";
+export const NotLoggedIn = "NotLoggedin";
+export const LogOut = "LogOut";
+export const GetProfile = "GetProfile";
+export const ProfileError = "ProfileError";
+export const Clear = "Clear";
