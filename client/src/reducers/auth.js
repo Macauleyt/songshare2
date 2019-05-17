@@ -5,6 +5,7 @@ import { UserLoad } from "../actions/constants";
 import { LoggedIn } from "../actions/constants";
 import { NotLoggedIn } from "../actions/constants";
 import { LogOut } from "../actions/constants";
+import { DeleteAccount } from "../actions/constants";
 
 //Object with token data and authentication boolean
 const initialState = {
@@ -42,6 +43,7 @@ export default function(state = initialState, action) {
     case NotAuth:
     case NotLoggedIn:
     case LogOut:
+    case DeleteAccount:
       localStorage.removeItem("token");
       return {
         ...state,

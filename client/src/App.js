@@ -8,7 +8,10 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Login from "./components/authorise/Login";
-import Main from "./components/main/main";
+import Main from "./components/main/Main";
+import CreateProfile from "./components/profileadd/CreateProfile";
+import EditProfile from "./components/profileadd/EditProfile";
+
 import PrivateRoute from "./components/routing/Private";
 
 import Landing from "./components/layout/Landing";
@@ -35,6 +38,16 @@ const App = () => {
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
               <PrivateRoute exact path="/main" component={Main} />
+              <PrivateRoute
+                exact
+                path="/create-profile"
+                component={CreateProfile}
+              />
+              <PrivateRoute
+                exact
+                path="/edit-profile"
+                component={EditProfile}
+              />
             </Switch>
           </section>
         </Fragment>

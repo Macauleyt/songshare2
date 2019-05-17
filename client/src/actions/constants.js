@@ -10,3 +10,4 @@ export const LogOut = "LogOut";
 export const GetProfile = "GetProfile";
 export const ProfileError = "ProfileError";
 export const Clear = "Clear";
+export const DeleteAccount = "DeleteAccount";
