@@ -7,7 +7,14 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const userLinks = (
     <ul>
       <li>
+        <Link to="/profiles">All Users</Link>
+      </li>
+      <li />
+      <li>
         <Link to="/main">Profile</Link>
+      </li>
+      <li>
+        <Link to="/posts">Posts</Link>
       </li>
       <li>
         <a onClick={logout} href="#!.html">
@@ -21,7 +28,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const nonuserLinks = (
     <ul>
       <li>
-        <a href="#!">Users</a>
+        <Link to="/profiles">All Users</Link>
       </li>
       <li>
         <Link to="/register">Register</Link>

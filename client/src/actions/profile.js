@@ -2,12 +2,52 @@ import axios from "axios";
 import { setAlert } from "./alert";
 import { GetProfile, DeleteAccount } from "./constants";
 import { ProfileError, Clear } from "./constants";
+import { GetAllProfiles } from "./constants";
 
 //Get user profile
 
 export const getCurrentProfile = () => async dispatch => {
   try {
     const res = await axios.get("/api/profile/me");
+
+    dispatch({
+      type: GetProfile,
+      payload: res.data
+    });
+  } catch (err) {
+    dispatch({
+      type: ProfileError,
+      payload: { msg: err.response.statusText, status: err.response.status }
+    });
+  }
+};
+
+//List all profiles
+
+export const getAllProfiles = () => async dispatch => {
+  dispatch({ type: Clear });
+  try {
+    const res = await axios.get("/api/profile/");
+
+    dispatch({
+      type: GetAllProfiles,
+      payload: res.data
+    });
+  } catch (err) {
+    dispatch({
+      type: ProfileError,
+      payload: { msg: err.response.statusText, status: err.response.status }
+    });
+  }
+};
+
+//View Profile By Id
+
+//List all profiles
+
+export const profileById = userId => async dispatch => {
+  try {
+    const res = await axios.get(`/api/profile/user/${userId}`);
 
     dispatch({
       type: GetProfile,
@@ -61,7 +101,7 @@ export const createProfile = (
   }
 };
 
-//Delete Account
+//Delete Account!
 
 export const deleteAccount = () => async dispatch => {
   if (window.confirm("Are you sure? This can NOT be undone!")) {

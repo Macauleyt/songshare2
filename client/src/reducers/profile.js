@@ -1,4 +1,9 @@
-import { GetProfile, ProfileError, Clear } from "../actions/constants";
+import {
+  GetProfile,
+  ProfileError,
+  Clear,
+  GetAllProfiles
+} from "../actions/constants";
 
 const initialState = {
   profile: null,
@@ -15,6 +20,12 @@ export default function(state = initialState, action) {
       return {
         ...state,
         profile: payload,
+        loading: false
+      };
+    case GetAllProfiles:
+      return {
+        ...state,
+        profiles: payload,
         loading: false
       };
     case ProfileError:

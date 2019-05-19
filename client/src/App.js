@@ -8,6 +8,10 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Login from "./components/authorise/Login";
+import Profile from "./components/profile/Profile";
+
+import Profiles from "./components/profiles/Profiles";
+
 import Main from "./components/main/Main";
 import CreateProfile from "./components/profileadd/CreateProfile";
 import EditProfile from "./components/profileadd/EditProfile";
@@ -15,6 +19,9 @@ import EditProfile from "./components/profileadd/EditProfile";
 import PrivateRoute from "./components/routing/Private";
 
 import Landing from "./components/layout/Landing";
+import Posts from "./components/posts/Posts";
+import Post from "./components/post/Post";
+
 import Register from "./components/authorise/Register";
 import AuthToken from "./utils/AuthToken";
 
@@ -37,6 +44,9 @@ const App = () => {
             <Switch>
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
+              <Route exact path="/profiles" component={Profiles} />
+              <Route exact path="/profile/:id" component={Profile} />
+
               <PrivateRoute exact path="/main" component={Main} />
               <PrivateRoute
                 exact
@@ -48,6 +58,8 @@ const App = () => {
                 path="/edit-profile"
                 component={EditProfile}
               />
+              <PrivateRoute exact path="/posts" component={Posts} />
+              <PrivateRoute exact path="/posts/:id" component={Post} />
             </Switch>
           </section>
         </Fragment>

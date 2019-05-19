@@ -15,7 +15,7 @@ const Main = ({
   useEffect(() => {
     getCurrentProfile();
     console.log("hello");
-  }, []);
+  }, [getCurrentProfile]);
   //If profile is null or still loading
   return loading && profile === null ? (
     <LoadGif />

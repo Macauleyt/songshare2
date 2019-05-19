@@ -11,3 +11,13 @@ export const GetProfile = "GetProfile";
 export const ProfileError = "ProfileError";
 export const Clear = "Clear";
 export const DeleteAccount = "DeleteAccount";
+export const GetAllProfiles = "GetAllProfiles";
+export const DeletePost = "DeletePost";
+export const AddPost = "AddPost";
+export const SinglePost = "SinglePost";
+export const Comment = "Comment";
+export const RemoveComment = "RemoveComment";
+
+export const GetPosts = "GetPosts";
+export const PostsError = "PostsError";
+export const LikeUpdate = "LikeUpdate";
