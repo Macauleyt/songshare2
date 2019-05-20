@@ -1,4 +1,3 @@
-import axios from "axios";
 import { connect } from "react-redux";
 import { Link, Redirect } from "react-router-dom";
 import React, { Fragment, useState } from "react";
@@ -22,27 +21,6 @@ const Login = ({ login, isAuthenticated }) => {
     //check for passwords matching
     console.log("Success");
     login(email, password);
-
-    // const newUser = {
-    //   name,
-    //   email,
-    //   password
-    // };
-
-    // try {
-    //   const config = {
-    //     headers: {
-    //       "Content-Type": "application/json"
-    //     }
-    //   };
-    //   //Creating body from register inputs newUser
-    //   const body = JSON.stringify(newUser);
-
-    //   const res = await axios.post("/api/users", body, config);
-    //   console.log(res.data);
-    // } catch (err) {
-    //   console.error(err.response.data);
-    // }
   };
   // Redirect is auth value = true
   if (isAuthenticated) {
