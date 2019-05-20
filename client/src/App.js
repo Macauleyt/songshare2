@@ -9,9 +9,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Login from "./components/authorise/Login";
 import Profile from "./components/profile/Profile";
-
 import Profiles from "./components/profiles/Profiles";
-
 import Main from "./components/main/Main";
 import CreateProfile from "./components/profileadd/CreateProfile";
 import EditProfile from "./components/profileadd/EditProfile";
