@@ -46,7 +46,7 @@ const Login = ({ login, isAuthenticated }) => {
   };
   // Redirect is auth value = true
   if (isAuthenticated) {
-    return <Redirect to="/main" />;
+    return <Redirect to="/posts" />;
   }
 
   return (

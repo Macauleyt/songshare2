@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import LoadGif from "../layout/LoadGif";
 import PropTypes from "prop-types";
 import ProfileAbout from "./ProfileAbout";
+import Spotify from "../spotify/Spotify";
 
 import ProfileTop from "./ProfileTop";
 import { profileById } from "../../actions/profile";
@@ -29,6 +30,7 @@ const Profile = ({
 
           <div class="profile-grid my-1">
             <ProfileTop profile={profile} />
+
             <ProfileAbout profile={profile} />
           </div>
         </Fragment>

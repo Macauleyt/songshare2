@@ -58,9 +58,10 @@ const EditProfile = ({
 
   return (
     <Fragment>
-      <h1 className="large text-primary">Create Your Profile</h1>
+      <h1 className="large text-primary">Edit Your Profile</h1>
       <p className="lead">
-        <i className="fas fa-user" /> Let's start by fleshing out your profile!
+        <i className="fas fa-user" /> Any changes made will be shown on your
+        profile page!
       </p>
 
       <form className="form" onSubmit={e => onSubmit(e)}>

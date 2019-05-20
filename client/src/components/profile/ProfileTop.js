@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Spotify from "../spotify/Spotify";
 
 const ProfileTop = ({
   profile: {
@@ -16,6 +17,9 @@ const ProfileTop = ({
       <h1 class="large">{name}</h1>
       <p class="lead">{bio}</p>
       <p>{location}</p>
+
+      <Spotify />
+
       <div class="icons my-1">
         {social && social.twitter && (
           <a href={social.twitter} target="_blank" rel="noopener noreferrer">

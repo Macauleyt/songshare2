@@ -21,11 +21,8 @@ const Main = ({
     <LoadGif />
   ) : (
     <Fragment>
-      <h1 className="large text-primary">Profile</h1>
-      <p className="lead">
-        <i className="fas fa-user" />
-        Welcome Back {user && user.name}!
-      </p>
+      <h1 className="large text-primary">Account</h1>
+      <p className="lead">Welcome back {user && user.name}!</p>
       {profile !== null ? (
         <Fragment>
           <MainActions />

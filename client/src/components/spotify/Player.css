@@ -1,0 +1,37 @@
+/** Now Playing **/
+
+.now-playing__name {
+  font-size: 1.5em;
+  margin-bottom: 0.2em;
+  background-color: black;
+  color: white;
+}
+
+.now-playing__artist {
+  background-color: black;
+  color: white;
+  margin-bottom: 1em;
+}
+
+.now-playing__status {
+  background-color: black;
+  color: white;
+  margin-bottom: 1em;
+}
+
+.now-playing__img {
+  float: bottom;
+  margin-left: 17.9%;
+  text-align: bottom;
+  width: 65%;
+}
+
+.now-playing__img img {
+  max-width: 80vmin;
+  width: 50%;
+}
+
+.now-playing__side {
+  margin-left: 27.4%;
+  width: 45%;
+}

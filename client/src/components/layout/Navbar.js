@@ -10,8 +10,9 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
         <Link to="/profiles">All Users</Link>
       </li>
       <li />
+
       <li>
-        <Link to="/main">Profile</Link>
+        <Link to="/main">Manage Profile</Link>
       </li>
       <li>
         <Link to="/posts">Posts</Link>
@@ -42,7 +43,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   return (
     <nav className="navbar bg-dark">
       <h1>
-        <Link to="/">
+        <Link to="/posts">
           <i className="" /> SongShare
         </Link>
       </h1>
