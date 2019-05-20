@@ -22,7 +22,9 @@ const ProfileItem = ({
       <ul>
         {artists.slice(0, 4).map((artist, index) => (
           <li key={index} className="text-primary">
-            <i className="fas fa-check">{artist}</i>
+            <i className="fas fa-volume-up">
+              {""} - {artist}
+            </i>
           </li>
         ))}
       </ul>

@@ -31,7 +31,7 @@ const ProfileTop = ({
 
         {social && social.spotify && (
           <a href={social.spotify} target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-youtube fa-2x" />
+            <i class="fab fa-spotify fa-2x" />
           </a>
         )}
         {social && social.youtube && (

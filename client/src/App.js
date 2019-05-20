@@ -15,7 +15,7 @@ import Profiles from "./components/profiles/Profiles";
 import Main from "./components/main/Main";
 import CreateProfile from "./components/profileadd/CreateProfile";
 import EditProfile from "./components/profileadd/EditProfile";
-
+import Spotify from "./components/spotify/Spotify";
 import PrivateRoute from "./components/routing/Private";
 
 import Landing from "./components/layout/Landing";
@@ -46,6 +46,7 @@ const App = () => {
               <Route exact path="/login" component={Login} />
               <Route exact path="/profiles" component={Profiles} />
               <Route exact path="/profile/:id" component={Profile} />
+              <Route exact path="/spotify" component={Spotify} />
 
               <PrivateRoute exact path="/main" component={Main} />
               <PrivateRoute

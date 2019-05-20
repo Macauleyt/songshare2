@@ -111,7 +111,7 @@ const CreateProfile = ({ createProfile, history }) => {
         </div>
 
         <div className="form-group social-input">
-          <i className="fab fa-linkedin fa-2x" />
+          <i className="fab fa-spotify fa-2x" />
           <input
             type="text"
             placeholder="Spotify URL"

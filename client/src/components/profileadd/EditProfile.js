@@ -31,7 +31,7 @@ const EditProfile = ({
       bio: loading || !profile.bio ? "" : profile.bio,
       twitter: loading || !profile.social ? "" : profile.social.twitter,
       facebook: loading || !profile.social ? "" : profile.social.facebook,
-      spotify: loading || !profile.social ? "" : profile.social.linkedin,
+      spotify: loading || !profile.social ? "" : profile.social.spotify,
       youtube: loading || !profile.social ? "" : profile.social.youtube,
       instagram: loading || !profile.social ? "" : profile.social.instagram
     });
@@ -132,7 +132,7 @@ const EditProfile = ({
         </div>
 
         <div className="form-group social-input">
-          <i className="fab fa-linkedin fa-2x" />
+          <i className="fab fa-spotify fa-2x" />
           <input
             type="text"
             placeholder="Spotify URL"

@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://MacauleyT:Lanivet23!@songshare-bspdb.mongodb.net/test?retryWrites=true",
+  "jwtToken": "secret"
+}

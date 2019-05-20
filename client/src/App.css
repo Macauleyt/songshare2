@@ -1,8 +1,8 @@
 /* Global Styles */
 :root {
-  --primary-color: #17a2b8;
+  --primary-color: #b41c68;
   --dark-color: #343a40;
-  --light-color: #f4f4f4;
+  --light-color: #dbdbdb;
   --danger-color: #dc3545;
   --success-color: #28a745;
 }
@@ -17,7 +17,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   color: #333;
 }
 
@@ -169,7 +169,7 @@ img {
 .badge-light,
 .alert-light {
   background: var(--light-color);
-  color: #333;
+  color: rgb(0, 0, 0);
 }
 
 .btn-dark,
@@ -284,8 +284,8 @@ button {
 .form .social-input i.fa-youtube {
   color: #c4302b;
 }
-.form .social-input i.fa-linkedin {
-  color: #0077b5;
+.form .social-input i.fa-spotify {
+  color: #2bc432;
 }
 
 .table th,
